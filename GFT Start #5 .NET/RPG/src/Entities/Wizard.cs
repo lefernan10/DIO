@@ -20,11 +20,11 @@ namespace RPG.src.Entities
         {
             if (bonus > 6)
             {
-                return $"{this.name} lançou uma bola de fogo grande com um bonus de {bonus}!";
+                return $"{this.name} lançou uma bola de fogo grande, adicionando +{bonus} de dano!";
             }
             else
             {
-                return $"{this.name} lançou uma bola de fogo com um bonus de {bonus}!";
+                return $"{this.name} lançou uma bola de fogo com +{bonus} de dano!";
             }
         }
     }

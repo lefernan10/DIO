@@ -13,12 +13,19 @@ namespace RPG.src.Entities
 
         public override string Attack()
         {
-            return $"{this.name} atacou com sua Katana!";
+            return $"{this.name} atacou com sua Maça!";
         }
 
         public string Attack(int bonus)
         {
-            return $"{this.name} atacou com sua Katana com um crítico de {bonus}!";
+            if (bonus > 6)
+            {
+                return $"{this.name} deu um ataque esmagador com sua Maça, adicionando +{bonus} de dano!";
+            }
+            else
+            {
+                return $"{this.name} acertou um crítico com sua Maça de +{bonus} de dano!";
+            }
         }
     }
 }
