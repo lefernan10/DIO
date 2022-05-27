@@ -1,6 +1,6 @@
 using Series.src.Enum;
 
-namespace Series.src.Classes
+namespace Series.src.Entities
 {
     public class Serie : BaseEntity
     {
@@ -8,6 +8,7 @@ namespace Series.src.Classes
         private string Title { get; set; }
         private string Description { get; set; }
         private int Year { get; set; }
+        private bool Deleted { get; set;}
 
         public Serie(int id, Genre genre, string title, string description, int year)
         {
@@ -16,6 +17,7 @@ namespace Series.src.Classes
             this.Title = title;
             this.Description = description;
             this.Year = year;
+            this.Deleted = false;
         }
 
         public override string ToString()
@@ -28,12 +30,24 @@ namespace Series.src.Classes
             return retorno;
         }
 
-        public string titleReturn(){
+        public string titleReturn()
+        {
             return this.Title;
         }
 
-        public int idReturn(){
+        public int idReturn()
+        {
             return this.Id;
+        }
+
+        public bool deletedReturn()
+        {
+            return this.Deleted;
+        }
+
+        public void Delete()
+        {
+            this.Deleted = true;
         }
     }
 

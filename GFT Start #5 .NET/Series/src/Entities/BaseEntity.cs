@@ -1,4 +1,4 @@
-namespace Series.src.Classes
+namespace Series.src.Entities
 {
     public abstract class BaseEntity
     {
