@@ -1,4 +1,4 @@
-# TQI Fullstack Developer
+# Bootcamp TQI Fullstack Developer
 
 ## Useful Links :link:
 - [W3Schools - HTML](https://www.w3schools.com/html/)
